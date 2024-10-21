@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'auth_screen.dart';
 
 class InitialScreen extends StatelessWidget {
+const InitialScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CoffeeTech'),
+        title: const Text('CoffeeTech'),
         centerTitle: true,
       ),
       body: Center(
@@ -17,27 +19,27 @@ class InitialScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AuthScreen()),
+                  MaterialPageRoute(builder: (context) => const AuthScreen()),
                 );
               },
-              child: Text('COOPERATIVE'),
+              child: const Text('COOPERATIVE'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AuthScreen()),
+                  MaterialPageRoute(builder: (context) => const AuthScreen()),
                 );
               },
-              child: Text('FARMER'),
+              child: const  Text('FARMER'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextButton(
               onPressed: () {
                 // Acción para contactar o información de contacto
               },
-              child: Text('Contact'),
+              child: const Text('Contact'),
             ),
           ],
         ),

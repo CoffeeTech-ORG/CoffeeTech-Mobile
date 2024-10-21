@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatelessWidget {
+  const AuthScreen({super.key});
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CofeeTech'),
+        title: const Text('CofeeTech'),
         centerTitle: true,
       ),
       body: Center(
@@ -16,21 +18,21 @@ class AuthScreen extends StatelessWidget {
               onPressed: () {
                 // Acción para iniciar sesión
               },
-              child: Text('LOG IN'),
+              child: const Text('LOG IN'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // Acción para registrarse
               },
-              child: Text('SIGN UP'),
+              child: const Text('SIGN UP'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextButton(
               onPressed: () {
                 // Acción para contactar o información de contacto
               },
-              child: Text('Contact'),
+              child: const Text('Contact'),
             ),
           ],
         ),
